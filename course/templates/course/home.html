@@ -1,0 +1,40 @@
+{% extends 'course/base.html' %} {% block title %}Home{% endblock %}
+
+<div>
+  {% block content %}
+  <section id="courses">
+    <div class="container">
+      <h3 class="text-center pb-4">Popular Courses</h3>
+      <div class="row g-4">
+        {% for course in course_list %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200/300"
+              class="card-img-top"
+              height="180px"
+              width="100%"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{course.name}}</h5>
+              <p
+                class="card-text"
+                style="
+                  height: calc(1.2em * 3);
+                  overflow: hidden;
+                  line-height: 1.2em;
+                "
+              >
+                {{course.description}}
+              </p>
+              <a href="course/{{course.id}}" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+</div>

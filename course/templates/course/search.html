@@ -1,0 +1,76 @@
+{% extends 'course/base.html' %} {% block title %}Courses{% endblock %}
+
+<!-- Main content -->
+{% block content %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="filter">
+          <h4>মূল্য পরিসীমা</h4>
+          <a href="">০-৫০০ টাকা</a>
+          <a href="">৫০০-১০০০ টাকা</a>
+          <a href="">১০০০-২০০০ টাকা</a>
+          <a href="">২০০০-৫০০০ টাকা</a>
+        </div>
+
+        <div class="filter">
+          <h4>ক্যাটাগরি</h4>
+          <a href="">গ্রাফিক্স ডিজাইন</a>
+          <a href="">ওয়েব ডিজাইন</a>
+          <a href="">ওয়েব ডেভেলপমেন্ট</a>
+          <a href="">নেটওয়ার্কিং</a>
+          <a href="">সাইবার নিরাপত্তা</a>
+          <a href="">অ্যান্ড্রয়েড ডেভেলপমেন্ট</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img
+                src="https://picsum.photos/200/300"
+                class="card-img-top"
+                height="180px"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{course.name}}</h5>
+                <p
+                  class="card-text"
+                  style="
+                    height: calc(1.2em * 3);
+                    overflow: hidden;
+                    line-height: 1.2em;
+                  "
+                >
+                  {{course.description}}
+                </p>
+                <a href="course/{{course.id}}" class="btn btn-primary"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="..." class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+{% endblock %}

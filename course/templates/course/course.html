@@ -1,0 +1,152 @@
+{% extends 'course/base.html' %} {% block title %}Course detail{% endblock %}
+{%block content %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <!-- intro -->
+        <div>
+          <h1>{{course.name}}</h1>
+        </div>
+
+        <!-- feature -->
+        <div></div>
+
+        <!-- study plan -->
+        <div>
+          
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  <div class="row g-4">
+                    <div
+                      class="col-12 col-md-2 "
+                    >
+                    <div class="text-white text-center rounded bg-success p-2"><p class="m-0">মডিউল</p>
+                      <h5 class="text-center m-0">১</h5></div>
+                      
+                    </div>
+                    <div class="col-10">
+                      <div class="row g-4">
+                        <h5>Beginning JavaScript 01</h5>
+                      <div class="row">
+                        <div class="col-4"><p>২ টি লাইভ ক্লাস</p></div>
+                        <div class="col-4"><p>১ টি এসাইনমেন্ট</p></div>
+                        <div class="col-4"><p>২ টি টেস্ট</p></div>
+                    </div></div>
+                    
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <div class="row g-4">
+                    <div
+                      class="col-12 col-md-2 "
+                    >
+                    <div class="text-white text-center rounded bg-danger p-2"><p class="m-0">মডিউল</p>
+                      <h5 class="text-center m-0">2</h5></div>
+                      
+                    </div>
+                    <div class="col-10">
+                      <div class="row g-4">
+                        <h5>Beginning JavaScript 01</h5>
+                      <div class="row">
+                        <div class="col-4"><p>২ টি লাইভ ক্লাস</p></div>
+                        <div class="col-4"><p>১ টি এসাইনমেন্ট</p></div>
+                        <div class="col-4"><p>২ টি টেস্ট</p></div>
+                    </div></div>
+                    
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+               <ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- instructor -->
+        <div></div>
+
+        <!--about course-->
+        <div></div>
+
+        <!-- help -->
+        <div></div>
+      </div>
+      <div class="col-12 col-lg-4"></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
