@@ -1,11 +1,23 @@
 from django.shortcuts import render
+from django.http import JsonResponse
+from django.core import serializers
 from .models import Course
 from .form import AdmissionForm
+from django.views import View
+import json
 
 # Create your views here.
 def index(request):
     course_list = Course.objects.all()
-    return render(request, 'course/home.html', {'course_list': course_list})
+    print(request.META)
+
+    if request.META.get('CONTENT_TYPE') == 'application/json':
+        json_course_list = serializers.serialize("json", course_list)
+        return JsonResponse(json.loads(json_course_list), safe=False)
+
+    else:    
+        return render(request, 'course/home.html', {'course_list': course_list})
+
 
 def detail(request, pk):
     course = Course.objects.get(pk=pk)
@@ -26,6 +38,8 @@ def contact(request):
 def branches(request):
     return render(request, 'course/branches.html', {})
 
-def admission(request):
-    form = AdmissionForm()
-    return render(request, 'course/admission.html', {'form': form})
+
+class AdmissionView(View):
+    def get(self, request):
+        form = AdmissionForm()
+        return render(request, 'course/admission.html', {'form': form})

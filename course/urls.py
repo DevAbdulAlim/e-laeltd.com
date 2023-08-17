@@ -1,17 +1,17 @@
 from django.urls import path 
-from . import views
+from .views import index, detail, search, about, services, contact, branches, AdmissionView
 
-
+app_name = 'course'
 urlpatterns = [
-    path('', views.index),
-    path('course/<int:pk>/', views.detail),
-    path('course/search/', views.search),
+    path('', index),
+    path('course/<int:pk>/', detail),
+    path('course/search/', search),
 ]
 
 urlpatterns += [
-    path('about/', views.about),
-    path('services/', views.services),
-    path('contact/', views.contact),
-    path('branches/', views.branches),
-    path('admission/', views.admission),
+    path('about/', about),
+    path('services/', services),
+    path('contact/', contact),
+    path('branches/', branches),
+    path('admission/', AdmissionView.as_view(), name='admission'),
 ]

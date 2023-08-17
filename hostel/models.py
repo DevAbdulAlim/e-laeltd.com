@@ -19,7 +19,7 @@ class Room(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
-        return self.room_numbers
+        return self.room_number
 
 class Booking(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)

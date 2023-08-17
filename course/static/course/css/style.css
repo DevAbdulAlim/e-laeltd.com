@@ -7,6 +7,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+body.open-menu {
+  overflow-x: hidden;
+}
 main {
   flex: 1;
   background-color: #f6f9fc;
