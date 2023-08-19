@@ -12,20 +12,40 @@ main {
   background-color: #f6f9fc;
 }
 
+/* universal */
+.list-group-borderless .list-group-item{
+border: none;
+}
+
 /* bootstrap override */
+
 .card {
-  height: 360px;
   box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
   border: none;
 }
+
+/* Aaccordion */
 .accordion {
   box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
 }
+.accordion-button:not(.collapsed) {
+  background-color: white;
+}
+.accordion-button:focus {
+  border: none ;
+  box-shadow: none;
+
+}
+
+
+
 /* end bootstrap override */
 
 .move-right {
   transition: transform 0.5s ease-in-out;
 }
+
+
 
 /* FOOTER */
 
@@ -36,4 +56,29 @@ footer a {
 /* ````````````````````````Search Page`````````````````````````````` */
 .filter a {
   display: block;
+}
+
+
+
+
+
+/* ````````````````````````Course Details Page```````````````````````` */
+/* Course Plan */
+#course-plan .topic-icon {
+  background: #575757;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-right: 0.8rem;
+}
+#course-plan .item {
+  list-style-type: none;
+  padding: 0;
+}
+
+#course-plan .item .icon i {
+  color: #575757;
 }

@@ -94,6 +94,7 @@ class Student(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    image = models.ImageField(upload_to="images/categories/", blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

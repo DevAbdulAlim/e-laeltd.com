@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Course
+from .models import Course, Category
 from .form import AdmissionForm
 
 # Create your views here.
@@ -11,8 +11,9 @@ def detail(request, pk):
     course = Course.objects.get(pk=pk)
     return render(request, 'course/course.html', {'course': course})
 
-def search(request):
-    return render(request, 'course/search.html', {})
+def categories(request):
+    categories = Category.objects.all()
+    return render(request, 'course/categories.html', {'categories': categories})
 
 def about(request):
     return render(request, 'course/about.html', {})
