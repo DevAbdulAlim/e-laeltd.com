@@ -24,8 +24,8 @@ def detail(request, pk):
     return render(request, 'course/course.html', {'course': course})
 
 def categories(request):
-    categories = Category.objects.values('name', 'image')
-    return render(request, 'course/categories.html', {'categories':categories})
+    categories = Category.objects.all()
+    return render(request, 'course/categories.html', {'categories': categories})
 
 def about(request):
     return render(request, 'course/about.html', {})
