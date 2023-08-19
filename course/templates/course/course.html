@@ -9,143 +9,433 @@
           <h1>{{course.name}}</h1>
         </div>
 
-        <!-- feature -->
-        <div></div>
+        <section>
+          <ul class="nav nav-underline" id="myTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="overview-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#overview"
+                type="button"
+                role="tab"
+                aria-controls="overview"
+                aria-selected="true"
+              >
+                Overview
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="curriculum-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#curriculum"
+                type="button"
+                role="tab"
+                aria-controls="curriculum"
+                aria-selected="false"
+              >
+                Curriculum
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="faqs-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#faqs"
+                type="button"
+                role="tab"
+                aria-controls="faqs"
+                aria-selected="false"
+              >
+                FAQs
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Overview tab content -->
+            <div
+              class="tab-pane fade show active"
+              id="overview"
+              role="tabpanel"
+              aria-labelledby="overview-tab"
+            >
+              <h5>Course Description</h5>
+              <p>
+                Welcome to the Digital Marketing Ultimate Course Bundle - 12
+                Courses in 1 (Over 36 hours of content)
+              </p>
+              <p>
+                In this practical hands-on training, you’re going to learn to
+                become a digital marketing expert with this ultimate course
+                bundle that includes 12 digital marketing courses in 1!
+              </p>
+              <p>
+                If you wish to find out the skills that should be covered in a
+                basic digital marketing course syllabus in India or anywhere
+                around the world, then reading this blog will help. Before we
+                delve into the advanced digital marketing course syllabus, let’s
+                look at the scope of digital marketing and what the future
+                holds.
+              </p>
+              <p>
+                We focus a great deal on the understanding of behavioral
+                psychology and influence triggers which are crucial for becoming
+                a well rounded Digital Marketer. We understand that theory is
+                important to build a solid foundation, we understand that theory
+                alone isn’t going to get the job done so that’s why this course
+                is packed with practical hands-on examples that you can follow
+                step by step.
+              </p>
+              <h5>What you’ll learn</h5>
+              <ul>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Digital
+                  marketing course introduction
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Customer Life
+                  cycle
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>What is Search
+                  engine optimization (SEO)
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Facebook ADS
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Facebook
+                  Messenger Chatbot
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Search engine
+                  optimization tools
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Why SEO
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>URL Structure
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Featured
+                  Snippet
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>SEO tips and
+                  tricks
+                </li>
+                <li>
+                  <span><i class="fas fa-check-circle"></i></span>Google tag
+                  manager
+                </li>
+              </ul>
+            </div>
 
-        <!-- study plan -->
-        <div>
-          
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  <div class="row g-4">
+            <!-- Curriculum tab content  -->
+            <div
+              class="tab-pane fade"
+              id="curriculum"
+              role="tabpanel"
+              aria-labelledby="curriculum-tab"
+            >
+              <section id="course-plan">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        <span class="topic-icon"
+                          ><i class="fab fa-react"></i
+                        ></span>
+                        Introduction to React
+                      </button>
+                    </h2>
                     <div
-                      class="col-12 col-md-2 "
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
                     >
-                    <div class="text-white text-center rounded bg-success p-2"><p class="m-0">মডিউল</p>
-                      <h5 class="text-center m-0">১</h5></div>
-                      
+                      <div class="accordion-body">
+                        <ul class="item">
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            What is React?
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            How does React work?
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            What are React components?
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            How to create a React app?
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            What is JSX?
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            How to manage state in React?
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="col-10">
-                      <div class="row g-4">
-                        <h5>Beginning JavaScript 01</h5>
-                      <div class="row">
-                        <div class="col-4"><p>২ টি লাইভ ক্লাস</p></div>
-                        <div class="col-4"><p>১ টি এসাইনমেন্ট</p></div>
-                        <div class="col-4"><p>২ টি টেস্ট</p></div>
-                    </div></div>
-                    
                   </div>
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <span class="topic-icon"
+                          ><i class="fas fa-code"></i
+                        ></span>
+                        HTML and CSS Fundamentals
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul class="item">
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Introduction to HTML
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            HTML Elements and Tags
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Introduction to CSS
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            CSS Selectors and Properties
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Responsive Web Design
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            CSS Flexbox and Grid
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span class="topic-icon"
+                          ><i class="fas fa-laptop-code"></i
+                        ></span>
+                        Web Development Tools
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul class="item">
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Integrated Development Environments (IDEs)
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Version Control with Git
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Package Managers (e.g., npm, yarn)
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Browser Developer Tools
+                          </li>
+                          <li>
+                            <span class="icon"
+                              ><i class="fas fa-check-circle"></i
+                            ></span>
+                            Testing and Debugging Tools
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </section>
+            </div>
+
+            <!-- FAQs tab content -->
+            <div
+              class="tab-pane fade"
+              id="faqs"
+              role="tabpanel"
+              aria-labelledby="faqs-tab"
+            >
+              <h1>Contact Content</h1>
+              <p>This is the content for the Contact tab.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card" style="height: fit-content">
+          <div class="card-body">
+            <div class="mb-3">
+              <video src="" controls height="200px" width="100%"></video>'
+            </div>
+
+            <div class="mb-3">
+              <span class="fw-bold h2">$500</span>
+              <del class="text-secondary fs-4">$750</del>
+            </div>
+
+            <div class="d-grid mb-3">
+              <button class="btn btn-primary">Enroll Now</button>
+            </div>
+
+            <hr />
+
+            <div class="mb-3">
+              <h5>What’s included</h5>
+              <ul class="list-group list-group-borderless">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fa-solid fa-book-open"></i>Lectures</span
+                  ><span>36</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fa-solid fa-clock"></i>Duration</span
+                  ><span>3h</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fa-solid fa-signal"></i>Skill</span
+                  ><span>Professional</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fa-solid fa-globe"></i>Language</span
+                  ><span>Bengali</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fa-solid fa-medal"></i>Certificate</span
+                  ><span>Yes</span>
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <div class="row g-2 mb-3">
+              <div class="col-4">
+                <div>
+                  <div class="position-relative">
+                    <img
+                      src="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-1.jpg"
+                      alt=""
+                      height="80px"
+                      width="80px"
+                      style="border-radius: 50%"
+                    />
+                    <span
+                      class="position-absolute top-50 start-500 translate-middle badge rounded-pill"
+                    >
+                      <img
+                        src="https://geeksui.codescandy.com/geeks/assets/images/svg/checked-mark.svg"
+                        alt=""
+                      />
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8">
+                <h5>
+              John Doe
+                </h5>
+                <p class="text-secondary">Digital marketing expert</p>
               </div>
             </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  <div class="row g-4">
-                    <div
-                      class="col-12 col-md-2 "
-                    >
-                    <div class="text-white text-center rounded bg-danger p-2"><p class="m-0">মডিউল</p>
-                      <h5 class="text-center m-0">2</h5></div>
-                      
-                    </div>
-                    <div class="col-10">
-                      <div class="row g-4">
-                        <h5>Beginning JavaScript 01</h5>
-                      <div class="row">
-                        <div class="col-4"><p>২ টি লাইভ ক্লাস</p></div>
-                        <div class="col-4"><p>১ টি এসাইনমেন্ট</p></div>
-                        <div class="col-4"><p>২ টি টেস্ট</p></div>
-                    </div></div>
-                    
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-               <ul class="list-group list-group-flush">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
-                </div>
-              </div>
+            <div class="d-flex justify-content-between">
+              <p>
+                <i class="bi bi-star-fill" style="color: #f7c32e"></i>
+                <i class="bi bi-star-fill" style="color: #f7c32e"></i>
+                <i class="bi bi-star-fill" style="color: #f7c32e"></i>
+                <i class="bi bi-star-fill" style="color: #f7c32e"></i>
+                <i class="bi bi-star-half" style="color: #f7c32e"></i>
+                <span>4.5/5.0</span></p>
+              <button class="btn btn-primary">Follow</button>
             </div>
           </div>
         </div>
-
-        <!-- instructor -->
-        <div></div>
-
-        <!--about course-->
-        <div></div>
-
-        <!-- help -->
-        <div></div>
       </div>
-      <div class="col-12 col-lg-4"></div>
     </div>
   </div>
 </section>

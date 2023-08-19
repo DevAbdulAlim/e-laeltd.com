@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.core import serializers
-from .models import Course
+from .models import Course, Category
 from .form import AdmissionForm
 from django.views import View
 import json
@@ -23,8 +23,9 @@ def detail(request, pk):
     course = Course.objects.get(pk=pk)
     return render(request, 'course/course.html', {'course': course})
 
-def search(request):
-    return render(request, 'course/search.html', {})
+def categories(request):
+    categories = Category.objects.values('name', 'image')
+    return render(request, 'course/categories.html', {'categories':categories})
 
 def about(request):
     return render(request, 'course/about.html', {})

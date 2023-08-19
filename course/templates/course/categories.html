@@ -1,0 +1,44 @@
+{% extends 'course/base.html' %} {% block title %}Courses{% endblock %}
+
+<!-- Main content -->
+{% block content %}
+<section>
+  <div class="container">
+    <div class="row g-4">
+      {% for category in categories %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+        <div class="card d-flex justify-content-center align-items-center" style="height: 200px;">
+          <img
+            src="{{category.image.url}}"
+            class="card-img-top"
+           style="height: 70px; width: 70px;"
+            alt="..."
+          />
+         
+            <h5 class="card-title">{{category.name}}</h5>
+           
+       
+       
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <nav aria-label="..." class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+{% endblock %}
