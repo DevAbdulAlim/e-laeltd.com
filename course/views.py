@@ -9,6 +9,7 @@ import json
 # Create your views here.
 def index(request):
     course_list = Course.objects.all()
+    category_list = Category.objects.all()[:8]
     print(request.META)
 
     if request.META.get('CONTENT_TYPE') == 'application/json':
@@ -16,7 +17,7 @@ def index(request):
         return JsonResponse(json.loads(json_course_list), safe=False)
 
     else:    
-        return render(request, 'course/home.html', {'course_list': course_list})
+        return render(request, 'course/home.html', {'course_list': course_list, 'category_list': category_list})
 
 
 def detail(request, pk):

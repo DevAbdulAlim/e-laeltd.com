@@ -2,18 +2,11 @@
 function openNav() {
   document.getElementById("mySlidenav").style.width = "250px";
   document.body.classList.add("open-menu");
-  var elements = document.querySelectorAll(".move-right");
-  elements.forEach(function (element) {
-    element.style.transform = "translate(250px, 0)";
-  });
+ 
 }
 function closeNav() {
   document.getElementById("mySlidenav").style.width = "0";
   document.body.classList.remove("open-menu");
-  var elements = document.querySelectorAll(".move-right");
-  elements.forEach(function (element) {
-    element.style.transform = "translate(0, 0)";
-  });
 }
 
 //dropdown
